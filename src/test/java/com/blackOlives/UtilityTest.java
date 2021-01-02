@@ -1,7 +1,13 @@
 package com.blackOlives;
 
-import static org.junit.jupiter.api.Assertions.*;
+import org.junit.Assert;
+import org.junit.Test;
 
-class UtilityTest {
+public class UtilityTest {
 
+    @Test
+    public void testAssignPlayersNotNull() {
+        Utility util = new Utility();
+        Assert.assertNotNull(util.assignPlayers(false));
+    }
 }
